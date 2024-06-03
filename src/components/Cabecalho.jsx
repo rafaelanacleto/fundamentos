@@ -1,7 +1,8 @@
-export default function Cabecalho() {
+export default function Cabecalho(props) {
+    console.log(props)
     return (
-        <div>
-           cabecaljho
-        </div>
+        <header>
+           <h2>{props.titulo}</h2>
+        </header>
     )
 }
