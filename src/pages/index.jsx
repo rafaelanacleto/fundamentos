@@ -1,10 +1,14 @@
+import Link from "next/link"
 import style from "../styles/Home.module.css"
+import Layout from "@/components/Layout"
 
 export default function Inicio() {
     return (
-        <div className={style.grid}>
-            <h1>React e Next.js</h1>
-            <h2>Vamos aprender novo framework</h2>
-        </div>
+        <Layout>
+            <div className="center">
+                <h2>Estilo Index</h2>
+                <Link href="/estiloso">Estiloso</Link>
+            </div>            
+        </Layout>
     )
 }
