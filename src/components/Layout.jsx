@@ -1,20 +1,16 @@
-import Link from "next/link"
-
+import Navegador from "./Navegador"
 import style from '../styles/Layout.module.css'
 
 export default function Layout(props) {
 
-    return(
-        <div className={style.layout}>  
+    return (
+        <div className={style.layout}>
             <div className={style.cabecalho}>
-                cabecalho
-            </div>  
+               <Navegador></Navegador>
+            </div>
             <div className={style.conteudo}>
-                conteudo
-            </div>        
-            
-            <Link href="/">Voltar</Link>
-            {props.children}
+                {props.children}
+            </div>
         </div>
     )
 }

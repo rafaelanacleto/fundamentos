@@ -1,9 +1,9 @@
-import Link from 'next/link'
+import Layout from '@/components/Layout'
 import style from '../styles/Estiloso.module.css'
 
 function Estiloso(params) {
     return(
-        <>        
+        <Layout>        
             <table className={style.table}>
                 <thead>
                     <tr>
@@ -33,9 +33,8 @@ function Estiloso(params) {
                     </tr>
                 </tbody>
             </table>
-            <hr />
-            <Link href="/">Voltar...</Link>
-        </>
+            <hr />           
+        </Layout>
     )
 }
 

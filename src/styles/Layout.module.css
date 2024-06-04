@@ -2,5 +2,28 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    
+
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background-color: rgb(3, 3, 34);
+
+}
+
+.cabecalho a {
+    background-color: darkred;
+    padding: 5px 9px;
+    text-decoration: none;
+    margin: 1px 2px 1px 2px;
+    border-radius: 8px;
+
+}
+
+.conteudo {
+    padding: 25px;
+    height: 100%;
+
 }
